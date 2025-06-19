@@ -1,35 +1,76 @@
-@import './base.css';
+/* src/assets/main.css */
+
+/* 포인트 색상 변수 정의 */
+:root {
+  --color-primary: #64d85e; /* 새로운 포인트 색상 */
+  --color-background-soft: #f9f9f9;
+  --color-background-mute: #f1f1f1;
+  --color-heading: #333;
+  --color-text: #444;
+  --color-border: #ddd;
+  --color-link: var(--color-primary);
+  --color-link-hover: #42973e; /* 포인트 색상보다 조금 어둡게 */
+}
+
+/* 기본 스타일 초기화 및 폰트 설정 */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background-soft);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  display: flex; /* Flexbox를 사용하여 사이드바와 메인 콘텐츠 배치 */
+  min-height: 100vh; /* 최소 높이를 뷰포트 높이로 설정 */
 }
 
-a,
-.green {
+/* 링크 스타일 */
+a {
+  color: var(--color-link);
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  transition: color 0.2s ease-in-out;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+a:hover {
+  color: var(--color-link-hover);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* 버튼 기본 스타일 */
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+button:hover {
+  background-color: var(--color-link-hover);
+}
+
+/* 카드 기본 스타일 */
+.card {
+  background-color: white;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  margin-top: 0;
+  margin-bottom: 15px;
 }
