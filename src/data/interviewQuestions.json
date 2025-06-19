@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "category": "JavaScript",
+    "question": "클로저(Closure)에 대해 설명해 주세요.",
+    "answer": "클로저는 함수와 함수가 선언될 당시의 렉시컬 환경(Lexical Environment)의 조합입니다. 함수가 생성될 때 외부 변수를 기억하고, 함수가 외부 스코프에서 실행되더라도 기억된 변수에 접근할 수 있게 합니다.",
+    "keywords": ["클로저", "렉시컬 스코프", "자바스크립트", "함수"],
+    "difficulty": "중급"
+  },
+  {
+    "id": 2,
+    "category": "Vue.js",
+    "question": "Vue.js의 라이프사이클 훅스(Lifecycle Hooks)에 대해 아는 대로 설명해 주세요.",
+    "answer": "Vue 컴포넌트의 생성부터 소멸까지의 과정에서 특정 시점에 자동으로 호출되는 함수들을 라이프사이클 훅스라고 합니다. `onMounted`, `onUpdated`, `onUnmounted` 등이 있습니다. 주로 컴포넌트의 특정 상태 변화에 따른 로직을 수행할 때 사용합니다.",
+    "keywords": ["Vue", "라이프사이클", "훅스", "컴포넌트"],
+    "difficulty": "초급"
+  },
+  {
+    "id": 3,
+    "category": "Front-end Basics",
+    "question": "RESTful API에 대해 설명하고, 구성 요소에 대해 알려주세요.",
+    "answer": "RESTful API는 REST 아키텍처 스타일을 따르는 웹 서비스 API입니다. 자원을 URI로 표현하고, HTTP 메소드(GET, POST, PUT, DELETE)를 통해 해당 자원을 조작합니다. 구성 요소로는 자원(Resource), 행위(Verb), 표현(Representation)이 있습니다.",
+    "keywords": ["REST", "API", "HTTP", "프론트엔드"],
+    "difficulty": "중급"
+  },
+  {
+    "id": 4,
+    "category": "Computer Science",
+    "question": "데이터베이스 정규화(Normalization)에 대해 아는 대로 설명해 주세요.",
+    "answer": "데이터베이스 정규화는 데이터 중복을 최소화하고 무결성을 유지하기 위해 데이터를 구조화하는 과정입니다. 1차 정규형부터 5차 정규형까지 있으며, 주로 3차 정규형까지 적용하는 것이 일반적입니다.",
+    "keywords": ["데이터베이스", "정규화", "DB", "중복"],
+    "difficulty": "고급"
+  },
+  {
+    "id": 5,
+    "category": "JavaScript",
+    "question": "비동기(Asynchronous) 자바스크립트의 중요성과 `async/await`에 대해 설명해 주세요.",
+    "answer": "비동기 자바스크립트는 블로킹(Blocking) 없이 작업을 처리하여 사용자 경험을 향상시킵니다. `async/await`은 Promise 기반의 비동기 코드를 동기 코드처럼 읽기 쉽게 작성할 수 있도록 하는 문법입니다. `async` 함수는 Promise를 반환하며, `await`은 Promise가 해결될 때까지 기다립니다.",
+    "keywords": ["비동기", "async", "await", "Promise", "자바스크립트"],
+    "difficulty": "중급"
+  },
+  {
+    "id": 6,
+    "category": "React",
+    "question": "React에서 가상 DOM(Virtual DOM)이 무엇인지, 왜 사용하는지 설명해 주세요.",
+    "answer": "가상 DOM은 실제 DOM의 가벼운 복사본으로, React가 컴포넌트의 UI를 메모리에 미리 렌더링하는 추상화된 DOM입니다. 실제 DOM 조작은 비용이 많이 들기 때문에, 가상 DOM을 사용하여 변경 사항을 먼저 계산하고 최소한의 실제 DOM 업데이트만 수행하여 성능을 최적화합니다.",
+    "keywords": ["React", "가상DOM", "Virtual DOM", "성능"],
+    "difficulty": "중급"
+  },
+  {
+    "id": 7,
+    "category": "Spring Boot",
+    "question": "이력서에 Spring Boot 레거시 프로젝트 마이그레이션 경험이 있는데, 구체적으로 어떤 기술적 문제를 해결하셨고, 가장 어려웠던 점은 무엇이었습니까?",
+    "answer": "",
+    "keywords": ["REST", "API", "HTTP", "프론트엔드"],
+    "difficulty": "중급"
+  },
+  {
+    "id": 8,
+    "category": "Computer Science",
+    "question": "Spring Boot 프로젝트 개발 시 주로 사용했던 디자인 패턴이나 아키텍처 원칙이 있다면 설명해 주십시오.",
+    "answer": "",
+    "keywords": ["데이터베이스", "정규화", "DB", "중복"],
+    "difficulty": "고급"
+  },
+  {
+    "id": 9,
+    "category": "JavaScript",
+    "question": "비동기(Asynchronous) 자바스크립트의 중요성과 `async/await`에 대해 설명해 주세요.",
+    "answer": "비동기 자바스크립트는 블로킹(Blocking) 없이 작업을 처리하여 사용자 경험을 향상시킵니다. `async/await`은 Promise 기반의 비동기 코드를 동기 코드처럼 읽기 쉽게 작성할 수 있도록 하는 문법입니다. `async` 함수는 Promise를 반환하며, `await`은 Promise가 해결될 때까지 기다립니다.",
+    "keywords": ["비동기", "async", "await", "Promise", "자바스크립트"],
+    "difficulty": "중급"
+  },
+  {
+    "id": 10,
+    "category": "React",
+    "question": "React에서 가상 DOM(Virtual DOM)이 무엇인지, 왜 사용하는지 설명해 주세요.",
+    "answer": "가상 DOM은 실제 DOM의 가벼운 복사본으로, React가 컴포넌트의 UI를 메모리에 미리 렌더링하는 추상화된 DOM입니다. 실제 DOM 조작은 비용이 많이 들기 때문에, 가상 DOM을 사용하여 변경 사항을 먼저 계산하고 최소한의 실제 DOM 업데이트만 수행하여 성능을 최적화합니다.",
+    "keywords": ["React", "가상DOM", "Virtual DOM", "성능"],
+    "difficulty": "중급"
+  },
+  {
+    "id": 11,
+    "category": "CSS",
+    "question": "Flexbox와 Grid 레이아웃의 차이점에 대해 설명해 주세요.",
+    "answer": "Flexbox는 1차원 레이아웃을 구성하는 데 최적화되어 있으며, 주로 행 또는 열 방향으로 아이템을 정렬합니다. 반면 Grid 레이아웃은 2차원 레이아웃을 구성할 수 있어 행과 열 모두를 동시에 제어할 수 있습니다. Flexbox는 콘텐츠의 크기에 따라 자동으로 조정되지만, Grid는 명시적으로 행과 열을 정의할 수 있습니다.",
+    "keywords": ["CSS", "Flexbox", "Grid", "레이아웃"],
+    "difficulty": "중급"
+  },
+  {
+    "id": 12,
+    "category": "TypeScript",
+    "question": "TypeScript의 장점과 단점에 대해 설명해 주세요.",
+    "answer": "TypeScript는 JavaScript의 상위 집합으로, 정적 타입 검사와 인터페이스, 제네릭 등의 기능을 제공합니다. 장점으로는 코드의 가독성과 유지보수성이 향상되고, IDE에서의 자동 완성 및 오류 검출이 용이합니다. 단점으로는 초기 설정이 복잡할 수 있고, JavaScript에 비해 컴파일 시간이 길어질 수 있습니다.",
+    "keywords": ["TypeScript", "장점", "단점", "정적 타입"],
+    "difficulty": "중급"
+  }
+]

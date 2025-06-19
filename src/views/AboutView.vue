@@ -1,15 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about-view">
+    <h1>DevInterviewPrep 소개</h1>
+    <p>이 프로젝트는 개발 면접 준비를 돕기 위해 제작된 간단한 웹 애플리케이션입니다.</p>
+    <p>예상 질문과 답변을 검색하고 학습하는 데 도움이 되기를 바랍니다.</p>
+    <p>제작자: [본인 이름]</p>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<script lang="ts">
+export default {
+  name: 'AboutViewPage',
+}
+</script>
+
+<style scoped>
+.about-view {
+  padding: 20px;
 }
 </style>

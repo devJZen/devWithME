@@ -1,85 +1,30 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import SideBar from './components/SideBar.vue' // 사이드바 컴포넌트 임포트
+import { RouterView } from 'vue-router' // RouterView를 직접 임포트
+
+// App.vue에서는 전역 스타일을 임포트하지 않습니다. main.ts에서 처리
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div class="app-container">
+    <SideBar />
+    <div class="main-content">
+      <router-view />
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+/* App.vue 자체의 레이아웃 스타일 */
+.app-container {
+  display: flex; /* Flexbox를 사용하여 SideBar와 main-content를 나란히 배치 */
+  min-height: 100vh; /* 뷰포트 전체 높이를 차지하도록 */
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.main-content {
+  flex-grow: 1; /* 남은 공간을 모두 차지하도록 */
+  padding: 20px; /* 메인 콘텐츠 영역의 기본 패딩 */
+  background-color: var(--color-background-soft);
+  overflow-y: auto; /* 내용이 넘칠 경우 스크롤바 */
 }
 </style>

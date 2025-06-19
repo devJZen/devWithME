@@ -1,5 +1,8 @@
+// src/router/index.ts
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import QuestionDetailView from '../views/QuestionDetailView.vue'
+import Aboutview from '@/views/Aboutview.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,10 +15,13 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      component: Aboutview,
+    },
+    {
+      path: '/question/:id', // 질문 ID에 따라 상세 페이지
+      name: 'question-detail',
+      component: QuestionDetailView,
+      props: true, // 라우트 매개변수를 컴포넌트 props로 전달
     },
   ],
 })
