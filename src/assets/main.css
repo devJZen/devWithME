@@ -1,15 +1,16 @@
 /* src/assets/main.css */
+/* https://colorhunt.co/palette/edf1d69dc08b60996640513b */
 
 /* 포인트 색상 변수 정의 */
 :root {
-  --color-primary: #64d85e; /* 새로운 포인트 색상 */
+  --color-primary: #609966; /* 새로운 포인트 색상 */
   --color-background-soft: #f9f9f9;
   --color-background-mute: #f1f1f1;
   --color-heading: #333;
-  --color-text: #444;
+  --color-text: #2c2b2b;
   --color-border: #ddd;
-  --color-link: var(--color-primary);
-  --color-link-hover: #42973e; /* 포인트 색상보다 조금 어둡게 */
+  --color-link: #9dc08b;
+  --color-link-hover: #40513b; /* 포인트 색상보다 조금 어둡게 */
 }
 
 /* 기본 스타일 초기화 및 폰트 설정 */

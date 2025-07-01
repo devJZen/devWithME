@@ -6,8 +6,8 @@ import { RouterLink } from 'vue-router'
   <aside class="sidebar">
     <nav class="sidebar-nav">
       <ul>
-        <li><RouterLink to="/" class="nav-link">🏠 홈</RouterLink></li>
-        <li><RouterLink to="/about" class="nav-link">ℹ️ 정보</RouterLink></li>
+        <li><RouterLink to="/" class="nav-link">Main</RouterLink></li>
+        <li><RouterLink to="/about" class="nav-link">About DevPrep</RouterLink></li>
       </ul>
     </nav>
     <div class="sidebar-footer">
@@ -20,7 +20,7 @@ import { RouterLink } from 'vue-router'
 /* SideBar.vue 에 특화된 스타일 */
 .sidebar {
   width: 150px; /* 사이드바 고정 너비 */
-  background-color: #2c3e50; /* 어두운 배경색 */
+  background-color: #40513b; /* 어두운 배경색 */
   padding: 20px;
   display: flex;
   flex-direction: column;

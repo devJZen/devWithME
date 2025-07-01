@@ -56,15 +56,15 @@ defineProps<{
 }
 
 .category {
-  background-color: var(--color-primary);
-  color: white;
+  background-color: #40513b;
+  color: #edf1d6;
   padding: 4px 8px;
   border-radius: 4px;
 }
 
 .difficulty {
-  background-color: #eee;
-  color: #555;
+  background-color: #609966;
+  color: #edf1d6;
   padding: 4px 8px;
   border-radius: 4px;
 }

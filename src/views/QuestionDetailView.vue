@@ -61,7 +61,7 @@ const goBack = () => {
 
 .back-button {
   margin-bottom: 20px;
-  background-color: #555;
+  background-color: #40513b;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -71,7 +71,7 @@ const goBack = () => {
 }
 
 .back-button:hover {
-  background-color: #777;
+  background-color: #9dc08b;
 }
 
 .question-card-detail {
