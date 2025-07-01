@@ -1,12 +1,8 @@
 <template>
   <div class="category-view">
-    <h1 class="page-title">카테고리 별로 공부하세요.</h1>
+    <h1 class="page-title">원하는 분야를 공부하세요.</h1>
     <ul>
-      <li v-for="question in filteredQuestions" :key="question.id">
-        <router-link :to="{ name: 'QuestionDetail', params: { id: question.id } }">
-          {{ question.title }}
-        </router-link>
-      </li>
+      <li v-for="question in filteredQuestions" :key="question.id"></li>
     </ul>
   </div>
 </template>
@@ -32,8 +28,7 @@ export default {
 
 <style scoped>
 .category-view {
-  max-width: 600px;
-  margin: 0 auto;
+  padding: 20px;
 }
 .page-title {
   font-size: 2em;
