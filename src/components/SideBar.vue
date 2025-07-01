@@ -7,6 +7,7 @@ import { RouterLink } from 'vue-router'
     <nav class="sidebar-nav">
       <ul>
         <li><RouterLink to="/" class="nav-link">Main</RouterLink></li>
+        <li><RouterLink to="/category" class="nav-link">Category</RouterLink></li>
         <li><RouterLink to="/about" class="nav-link">About DevPrep</RouterLink></li>
       </ul>
     </nav>

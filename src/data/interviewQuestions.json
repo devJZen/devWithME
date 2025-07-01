@@ -94,5 +94,37 @@
     "answer": "TypeScript는 JavaScript의 상위 집합으로, 정적 타입 검사와 인터페이스, 제네릭 등의 기능을 제공합니다. 장점으로는 코드의 가독성과 유지보수성이 향상되고, IDE에서의 자동 완성 및 오류 검출이 용이합니다. 단점으로는 초기 설정이 복잡할 수 있고, JavaScript에 비해 컴파일 시간이 길어질 수 있습니다.",
     "keywords": ["TypeScript", "장점", "단점", "정적 타입"],
     "difficulty": "중급"
+  },
+  {
+    "id": 12,
+    "category": "TypeScript",
+    "question": "TypeScript의 장점과 단점에 대해 설명해 주세요.",
+    "answer": "TypeScript는 JavaScript의 상위 집합으로, 정적 타입 검사와 인터페이스, 제네릭 등의 기능을 제공합니다. 장점으로는 코드의 가독성과 유지보수성이 향상되고, IDE에서의 자동 완성 및 오류 검출이 용이합니다. 단점으로는 초기 설정이 복잡할 수 있고, JavaScript에 비해 컴파일 시간이 길어질 수 있습니다.",
+    "keywords": ["TypeScript", "장점", "단점", "정적 타입"],
+    "difficulty": "중급"
+  },
+  {
+    "id": 13,
+    "category": "BlockChain",
+    "question": "스테이블코인과 알트코인의 차이점에 대해서 설명해주세요.",
+    "answer": "스테이블 코인은 법정화폐나 자산에 가치를 연동하여 가격 변동성을 최소화한 암호화폐입니다. 알트코인은 비트코인 외의 다른 암호화폐를 의미하며, 다양한 기능과 목적을 가지고 있습니다. 비트코인은 최초의 암호화폐로, 분산형 디지털 통화를 목표로 합니다.",
+    "keywords": ["BlockChain", "StableCoin", "AltCoin", "BitCoin"],
+    "difficulty": "초급"
+  },
+  {
+    "id": 14,
+    "category": "BlockChain",
+    "question": "알트코인에 대해서 설명해주세요.",
+    "answer": "Alternative Coin, 즉 알트코인은 비트코인 외의 다른 암호화폐를 의미합니다. 알트코인은 다양한 기능과 목적을 가지고 있으며, 예를 들어 이더리움은 스마트 계약 기능을 제공하고, 리플은 금융 거래의 효율성을 높이는 데 중점을 둡니다. 알트코인은 비트코인에 비해 가격 변동성이 크고, 기술적 혁신이 활발하게 이루어지고 있습니다.",
+    "keywords": ["BlockChain", "AltCoin", "설명"],
+    "difficulty": "초급"
+  },
+  {
+    "id": 15,
+    "category": "BlockChain",
+    "question": "중앙화 거래소와 탈중앙화 거래소의 차이점에 대해 설명해주세요.",
+    "answer": "중앙화 거래소(Centralized Exchange, CEX)는 중앙 기관이 운영하며, 사용자가 자산을 거래하기 위해 해당 기관에 자산을 맡깁니다. 반면 탈중앙화 거래소(Decentralized Exchange, DEX)는 블록체인 기술을 기반으로 하여 중앙 기관 없이 사용자 간 직접 거래를 지원합니다. CEX는 사용자 친화적인 인터페이스와 높은 유동성을 제공하지만, 해킹 위험이 존재합니다. DEX는 보안성이 높고 개인 정보 보호가 강화되지만, 사용이 복잡할 수 있습니다.",
+    "keywords": ["BlockChain", "CEX", "DEX", "거래소"],
+    "difficulty": "초급"
   }
 ]
