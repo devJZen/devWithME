@@ -1,3 +1,7 @@
 # interviewForDevJob
 
-This template should help get you started developing with Vue 3 in Vite.
+공식 문서를 기반으로
+
+질문-답변 형식으로 개발 용어들을 정리했습니다.
+
+학습에 도움이 되길 바랍니다.

@@ -1,9 +1,9 @@
-// src/router/index.ts
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import QuestionDetailView from '../views/QuestionDetailView.vue'
 import Aboutview from '@/views/Aboutview.vue'
 import Categoryview from '@/views/Categoryview.vue'
+import CategoryQuestionsView from '@/views/CategoryQuestionsView.vue'
 import Testview from '@/views/Testview.vue'
 
 const router = createRouter({
@@ -20,9 +20,15 @@ const router = createRouter({
       component: Aboutview,
     },
     {
-      path: '/category', // 카테고리별 질문 목록
-      name: 'category-questions',
+      path: '/category', // 카테고리 목록 페이지
+      name: 'category-list',
       component: Categoryview,
+    },
+    {
+      path: '/category/:categoryName', // 카테고리별 질문 목록
+      name: 'category-questions',
+      component: CategoryQuestionsView,
+      props: true,
     },
     {
       path: '/test', // 커스텀 테스트 페이지
