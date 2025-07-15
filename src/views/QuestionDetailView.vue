@@ -25,6 +25,11 @@ const formattedKeywords = computed(() => {
   return question.value ? question.value.keywords.join(', ') : ''
 })
 
+// 답변에서 줄바꿈 문자를 <br> 태그로 변환
+const formattedAnswer = computed(() => {
+  return question.value ? question.value.answer.replace(/\n/g, '<br>') : ''
+})
+
 // 뒤로 가기 버튼
 const goBack = () => {
   router.back()
@@ -42,7 +47,27 @@ const goBack = () => {
       </div>
       <div class="question-answer-section">
         <h2>답변</h2>
-        <p class="answer-content">{{ question.answer }}</p>
+        <div class="answer-content" v-html="formattedAnswer"></div>
+
+        <!-- 참조 링크 섹션 -->
+        <div v-if="question.referenceText && question.referenceURI" class="reference-section">
+          <h3>참고 자료</h3>
+          <div class="reference-links">
+            <a
+              v-for="(text, index) in question.referenceText"
+              :key="index"
+              :href="question.referenceURI[index]"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="reference-link"
+            >
+              {{ text }}
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="external-link-icon">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="question-keywords-section">
         <h3>키워드</h3>
@@ -124,6 +149,55 @@ const goBack = () => {
   line-height: 1.8;
   color: var(--color-text);
   white-space: pre-wrap; /* 줄바꿈 유지 */
+  word-wrap: break-word;
+  margin-bottom: 15px;
+}
+
+.answer-content ::v-deep(br) {
+  line-height: 2.4;
+}
+
+.reference-section {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.reference-section h3 {
+  color: var(--color-heading);
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.reference-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reference-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.95em;
+  padding: 8px 12px;
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.reference-link:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.external-link-icon {
+  flex-shrink: 0;
 }
 
 .keywords-content {

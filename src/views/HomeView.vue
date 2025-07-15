@@ -31,7 +31,9 @@ const filteredQuestions = computed(() => {
 <template>
   <div class="home-view">
     <h1 class="page-title">아침마다 공부하세요.</h1>
-    <SearchBar @search="handleSearch" />
+    <div class="search-container">
+      <SearchBar @search="handleSearch" />
+    </div>
 
     <div v-if="filteredQuestions.length === 0" class="no-results">
       <p>검색 결과가 없습니다.</p>
@@ -47,6 +49,9 @@ const filteredQuestions = computed(() => {
 /* HomeView.vue 에 특화된 스타일 */
 .home-view {
   padding: 20px;
+  min-width: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .page-title {
@@ -54,6 +59,14 @@ const filteredQuestions = computed(() => {
   color: var(--color-heading);
   margin-bottom: 25px;
   text-align: center;
+  min-width: 300px;
+  width: 100%;
+}
+
+.search-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 20px auto;
 }
 
 .question-list {
@@ -61,6 +74,8 @@ const filteredQuestions = computed(() => {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 반응형 그리드 */
   gap: 20px;
   margin-top: 20px;
+  min-width: 800px;
+  width: 100%;
 }
 
 .no-results {
@@ -68,5 +83,24 @@ const filteredQuestions = computed(() => {
   margin-top: 50px;
   font-size: 1.2em;
   color: #666;
+  min-width: 300px;
+  width: 100%;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .home-view {
+    min-width: 320px;
+    padding: 15px;
+  }
+
+  .question-list {
+    min-width: 300px;
+    grid-template-columns: 1fr;
+  }
+
+  .search-container {
+    max-width: 100%;
+  }
 }
 </style>

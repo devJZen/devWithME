@@ -3,25 +3,31 @@
     "id": 1,
     "category": "JavaScript",
     "question": "클로저(Closure)에 대해 설명해 주세요.",
-    "answer": "클로저는 함수와 함수가 선언될 당시의 렉시컬 환경(Lexical Environment)의 조합입니다. 함수가 생성될 때 외부 변수를 기억하고, 함수가 외부 스코프에서 실행되더라도 기억된 변수에 접근할 수 있게 합니다.",
+    "answer": "클로저는 함수와 함수가 선언될 당시의 렉시컬 환경(Lexical Environment)의 조합입니다.\n\n함수가 생성될 때 외부 변수를 기억하고, 함수가 외부 스코프에서 실행되더라도 기억된 변수에 접근할 수 있게 합니다.\n\n주요 특징:\n- 외부 변수에 대한 접근 유지\n- 데이터 은닉 가능\n- 함수형 프로그래밍의 핵심 개념",
     "keywords": ["클로저", "렉시컬 스코프", "자바스크립트", "함수"],
+    "referenceText": ["클로저 상세 가이드"],
+    "referenceURI": ["https://developer.mozilla.org/ko/docs/Web/JavaScript/Closures"],
     "difficulty": "중급"
   },
   {
     "id": 2,
     "category": "Vue.js",
     "question": "Vue.js의 라이프사이클 훅스(Lifecycle Hooks)에 대해 아는 대로 설명해 주세요.",
-    "answer": "Vue 컴포넌트의 생성부터 소멸까지의 과정에서 특정 시점에 자동으로 호출되는 함수들을 라이프사이클 훅스라고 합니다. `onMounted`, `onUpdated`, `onUnmounted` 등이 있습니다. 주로 컴포넌트의 특정 상태 변화에 따른 로직을 수행할 때 사용합니다.",
+    "answer": "Vue 컴포넌트의 생성부터 소멸까지의 과정에서 특정 시점에 자동으로 호출되는 함수들을 라이프사이클 훅스라고 합니다.\n\n주요 라이프사이클 훅스:\n- onMounted: 컴포넌트가 DOM에 마운트된 후 호출\n- onUpdated: 컴포넌트가 업데이트된 후 호출\n- onUnmounted: 컴포넌트가 언마운트되기 전 호출\n\n주로 컴포넌트의 특정 상태 변화에 따른 로직을 수행할 때 사용합니다.",
     "keywords": ["Vue", "라이프사이클", "훅스", "컴포넌트"],
+    "referenceText": ["Vue.js 공식 문서 - 라이프사이클 훅스"],
+    "referenceURI": ["https://vuejs.org/guide/essentials/lifecycle.html"],
     "difficulty": "초급"
   },
   {
     "id": 3,
-    "category": "Front-end Basics",
+    "category": "Network",
     "question": "RESTful API에 대해 설명하고, 구성 요소에 대해 알려주세요.",
-    "answer": "RESTful API는 REST 아키텍처 스타일을 따르는 웹 서비스 API입니다. 자원을 URI로 표현하고, HTTP 메소드(GET, POST, PUT, DELETE)를 통해 해당 자원을 조작합니다. 구성 요소로는 자원(Resource), 행위(Verb), 표현(Representation)이 있습니다.",
-    "keywords": ["REST", "API", "HTTP", "프론트엔드"],
-    "difficulty": "중급"
+    "answer": "RESTful API는 REST 아키텍처 스타일을 따르는 웹 서비스 API입니다.\n\n특징:\n- 자원을 URI로 표현\n- HTTP 메소드(GET, POST, PUT, DELETE)를 통해 자원 조작\n- 무상태(Stateless) 통신\n- 계층화된 시스템 구조\n\n구성 요소:\n1. 자원(Resource): URI로 식별되는 데이터\n2. 행위(Verb): HTTP 메소드로 표현되는 동작\n3. 표현(Representation): JSON, XML 등의 데이터 형식",
+    "keywords": ["RESTful", "API", "HTTP"],
+    "referenceText": ["REST API 튜토리얼", "HTTP 메소드 상세 가이드"],
+    "referenceURI": ["https://restfulapi.net/", "https://developer.mozilla.org/ko/docs/Web/HTTP/Methods"],
+    "difficulty": "초급"
   },
   {
     "id": 4,
@@ -45,23 +51,25 @@
     "question": "React에서 가상 DOM(Virtual DOM)이 무엇인지, 왜 사용하는지 설명해 주세요.",
     "answer": "가상 DOM은 실제 DOM의 가벼운 복사본으로, React가 컴포넌트의 UI를 메모리에 미리 렌더링하는 추상화된 DOM입니다. 실제 DOM 조작은 비용이 많이 들기 때문에, 가상 DOM을 사용하여 변경 사항을 먼저 계산하고 최소한의 실제 DOM 업데이트만 수행하여 성능을 최적화합니다.",
     "keywords": ["React", "가상DOM", "Virtual DOM", "성능"],
+    "referenceText": ["React 공식 문서 - Virtual DOM", "가상 DOM 개념 상세 설명"],
+    "referenceURI": ["https://react.dev/learn/preserving-and-resetting-state#the-ui-tree", "https://ko.reactjs.org/docs/faq-internals.html"],
     "difficulty": "중급"
   },
   {
     "id": 7,
-    "category": "Spring Boot",
-    "question": "이력서에 Spring Boot 레거시 프로젝트 마이그레이션 경험이 있는데, 구체적으로 어떤 기술적 문제를 해결하셨고, 가장 어려웠던 점은 무엇이었습니까?",
-    "answer": "자율",
-    "keywords": ["REST", "API", "HTTP", "프론트엔드"],
-    "difficulty": "중급"
+    "category": "Network",
+    "question": "HTTP에 대해서 설명해주세요.",
+    "answer": "HTTP란 HyperText Transfer Protocol을 의미하며, 웹에서 클라이언트와 서버 간의 데이터 전송을 위한 프로토콜입니다. 주로 HTML 문서를 전송하는 용도로 사용됩니다. HTTP는 요청(Request)과 응답(Response) 구조로 동작하며, 클라이언트가 서버에 요청을 보내고 서버가 응답을 반환합니다. HTTP는 상태 비저장(stateless) 프로토콜로, 각 요청은 독립적으로 처리됩니다. 보안이 필요한 경우 HTTPS를 사용하여 SSL/TLS 암호화를 적용할 수 있습니다.",
+    "keywords": ["Network", "HTTP"],
+    "difficulty": "초급"
   },
   {
     "id": 8,
-    "category": "Computer Science",
+    "category": "Architecture",
     "question": "Spring Boot 프로젝트 개발 시 주로 사용했던 디자인 패턴이나 아키텍처 원칙이 있다면 설명해 주십시오.",
-    "answer": "",
-    "keywords": ["데이터베이스", "정규화", "DB", "중복"],
-    "difficulty": "고급"
+    "answer": "MVC 패턴을 사용하여 애플리케이션의 구조를 분리하고, SOLID 원칙을 적용하여 코드의 유지보수성과 확장성을 높였습니다. 또한, 의존성 주입(Dependency Injection)을 통해 컴포넌트 간의 결합도를 낮추고 테스트 용이성을 향상시켰습니다.",
+    "keywords": ["Architecture", "Spring Boot", "Designe Pattern"],
+    "difficulty": "중급"
   },
   {
     "id": 9,
@@ -85,7 +93,7 @@
     "question": "Flexbox와 Grid 레이아웃의 차이점에 대해 설명해 주세요.",
     "answer": "Flexbox는 1차원 레이아웃을 구성하는 데 최적화되어 있으며, 주로 행 또는 열 방향으로 아이템을 정렬합니다. 반면 Grid 레이아웃은 2차원 레이아웃을 구성할 수 있어 행과 열 모두를 동시에 제어할 수 있습니다. Flexbox는 콘텐츠의 크기에 따라 자동으로 조정되지만, Grid는 명시적으로 행과 열을 정의할 수 있습니다.",
     "keywords": ["CSS", "Flexbox", "Grid", "레이아웃"],
-    "difficulty": "중급"
+    "difficulty": "초급"
   },
   {
     "id": 12,
@@ -93,15 +101,7 @@
     "question": "TypeScript의 장점과 단점에 대해 설명해 주세요.",
     "answer": "TypeScript는 JavaScript의 상위 집합으로, 정적 타입 검사와 인터페이스, 제네릭 등의 기능을 제공합니다. 장점으로는 코드의 가독성과 유지보수성이 향상되고, IDE에서의 자동 완성 및 오류 검출이 용이합니다. 단점으로는 초기 설정이 복잡할 수 있고, JavaScript에 비해 컴파일 시간이 길어질 수 있습니다.",
     "keywords": ["TypeScript", "장점", "단점", "정적 타입"],
-    "difficulty": "중급"
-  },
-  {
-    "id": 12,
-    "category": "TypeScript",
-    "question": "TypeScript의 장점과 단점에 대해 설명해 주세요.",
-    "answer": "TypeScript는 JavaScript의 상위 집합으로, 정적 타입 검사와 인터페이스, 제네릭 등의 기능을 제공합니다. 장점으로는 코드의 가독성과 유지보수성이 향상되고, IDE에서의 자동 완성 및 오류 검출이 용이합니다. 단점으로는 초기 설정이 복잡할 수 있고, JavaScript에 비해 컴파일 시간이 길어질 수 있습니다.",
-    "keywords": ["TypeScript", "장점", "단점", "정적 타입"],
-    "difficulty": "중급"
+    "difficulty": "초급"
   },
   {
     "id": 13,
@@ -181,6 +181,54 @@
     "question": "BPF에 대해 설명해주세요.",
     "answer": "BPF(Berkeley Packet Filter)는 네트워크 패킷 필터링을 위한 기술로, C 기반의 가상 머신에서 실행됩니다. BPF는 고성능과 안전성을 제공하며, 다양한 프로그래밍 언어로 작성된 코드를 실행할 수 있습니다. 솔라나에서는 BPF를 사용하여 프로그램을 작성하고, 이를 통해 트랜잭션을 처리하고 상태를 관리합니다. BPF는 효율적인 메모리 사용과 빠른 실행 속도를 제공하여, 솔라나의 높은 처리량과 낮은 지연 시간을 지원합니다.",
     "keywords": ["BlockChain", "BPF", "Solana", "Rust"],
+    "difficulty": "초급"
+  },
+  {
+    "id": 23,
+    "category": "Network",
+    "question": "HTTP 메서드(Method)에 대해 설명해주세요.",
+    "answer": "HTTP 메서드는 클라이언트가 서버에 요청을 보낼 때 사용하는 방법입니다. 주요 메서드로는 GET, POST, PUT, DELETE가 있습니다. GET은 데이터를 조회할 때 사용하고, POST는 데이터를 생성할 때, PUT은 데이터를 업데이트할 때, DELETE는 데이터를 삭제할 때 사용됩니다. 각 메서드는 특정한 목적과 의미를 가지며, RESTful API 설계에서 중요한 역할을 합니다.",
+    "keywords": ["Network", "HTTP", "RESTful"],
+    "difficulty": "초급"
+  },
+  {
+    "id": 24,
+    "category": "Network",
+    "question": "RESTful API 설계에서 사용하는 멱등성에 대해 설명해주세요.",
+    "answer": "멱등성이란 동일한 요청을 여러 번 실행해도 결과가 동일하다는 것을 의미합니다. RESTful API에서 GET, DELETE 메서드는 멱등성을 가지며, PUT 메서드는 요청에 따라 달라지고, POST 메서드는 멱등성을 가지지 않습니다. 멱등성은 네트워크 장애나 중복 요청 시 안전한 처리를 보장하는 데 중요한 개념입니다.",
+    "keywords": ["Network", "HTTP", "RESTful"],
+    "difficulty": "초급"
+  },
+  {
+    "id": 25,
+    "category": "Network",
+    "question": "HTTP 메서드인 GET에 대해 설명해주세요.",
+    "answer": "GET 메서드는 클라이언트가 서버로부터 데이터를 요청할 때 사용되는 HTTP 메서드입니다. GET 요청은 서버에 저장된 자원을 조회하는 데 사용되며, 서버의 상태를 변경하지 않는 안전한 메서드입니다. 또한 멱등성을 가지며, 캐싱이 가능합니다. 데이터는 URL의 쿼리 파라미터를 통해 전달됩니다.",
+    "keywords": ["Network", "HTTP", "RESTful"],
+    "difficulty": "초급"
+  },
+  {
+    "id": 26,
+    "category": "Network",
+    "question": "HTTP 메서드인 POST에 대해 설명해주세요.",
+    "answer": "서버에 데이터를 제출하여 새로운 리소스를 생성하거나, 기존 리소스에 데이터를 추가하거나, 특정 작업을 수행하도록 요청한다. POST 요청은 서버의 상태를 변경할 수 있으며, 여러 번 반복해서 요청할 경우 매번 다른 결과(예: 새로운 리소스 생성)를 가져올 수 있으므로 안전하지 않고 멱등성도 없다.",
+    "keywords": ["Network", "HTTP", "RESTful"],
+    "difficulty": "초급"
+  },
+  {
+    "id": 27,
+    "category": "Network",
+    "question": "HTTP 메서드인 PUT에 대해 설명해주세요.",
+    "answer": "요청 본문에 포함된 데이터로 대상 리소스 전체를 대체하거나, 해당 리소스가 존재하지 않으면 새로 생성한다. PUT 요청은 동일한 요청을 여러 번 보내도 결과가 동일하므로 멱등성을 가진다.",
+    "keywords": ["Network", "HTTP", "RESTful"],
+    "difficulty": "초급"
+  },
+  {
+    "id": 28,
+    "category": "Network",
+    "question": "HTTP 메서드인 DELETE에 대해 설명해주세요.",
+    "answer": "특정 리소스를 삭제하도록 요청한다. DELETE 요청은 여러 번 반복해도 동일하게 리소스가 삭제된 상태를 유지하므로 멱등성을 가진다.",
+    "keywords": ["Network", "HTTP", "RESTful"],
     "difficulty": "초급"
   }
 ]

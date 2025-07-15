@@ -28,10 +28,13 @@ const performSearch = () => {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  min-width: 300px;
+  width: 100%;
 }
 
 .search-input {
   flex-grow: 1;
+  min-width: 200px;
   padding: 12px 15px;
   border: 1px solid var(--color-border);
   border-radius: 8px;

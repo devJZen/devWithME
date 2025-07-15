@@ -9,6 +9,7 @@
         class="category-tag"
       >
         # {{ category }}
+        <span class="question-count">({{ getCategoryQuestionCount(category) }})</span>
       </router-link>
     </div>
     <div v-if="uniqueCategories.length === 0" class="no-categories">
@@ -34,8 +35,14 @@ export default defineComponent({
       return Array.from(categories).sort() // 알파벳 순 정렬
     })
 
+    // 카테고리별 질문 개수 계산
+    const getCategoryQuestionCount = (category: string) => {
+      return (allQuestions as Question[]).filter(q => q.category === category).length
+    }
+
     return {
       uniqueCategories,
+      getCategoryQuestionCount,
     }
   },
 })
@@ -48,8 +55,6 @@ export default defineComponent({
   margin: 0 auto;
 }
 .page-title {
-  font-size: 2.2em;
-  color: var(--color-heading);
   margin-bottom: 30px;
 }
 .category-tags {
@@ -73,6 +78,14 @@ export default defineComponent({
     transform 0.2s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.category-tag .question-count {
+  font-size: 0.9em;
+  font-weight: normal;
+  opacity: 0.7;
+  margin-left: 8px;
+}
+
 .category-tag:hover {
   background-color: var(--color-primary);
   color: white;

@@ -5,5 +5,7 @@ export interface Question {
   question: string
   answer: string
   keywords: string[]
+  referenceText?: string[]
+  referenceURI?: string[]
   difficulty: string
 }
