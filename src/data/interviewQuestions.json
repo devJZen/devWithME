@@ -230,5 +230,37 @@
     "answer": "특정 리소스를 삭제하도록 요청한다. DELETE 요청은 여러 번 반복해도 동일하게 리소스가 삭제된 상태를 유지하므로 멱등성을 가진다.",
     "keywords": ["Network", "HTTP", "RESTful"],
     "difficulty": "초급"
+  },
+    {
+    "id": 29,
+    "category": "Solana",
+    "question": "Turbine에 대해서 설명해주세요.",
+    "answer": "다층 구조(Multi-Layer Tree)의 프로토콜로 블록의 전파를 담당합니다.",
+    "keywords": ["Solana", "Multi-Layer"],
+    "difficulty": "초급"
+  },
+    {
+    "id": 30,
+    "category": "Consensus",
+    "question": "합의에 대해서 간단하게 설명해주세요.",
+    "answer": "합의는 블록이 생성될 때의 과정 중 일부를 말합니다. 일과 돈, 분산성에 의한 합의가 기본으로 되고 최신 연구들은 BFT를 기준으로 진행되고 있습니다. BFT를 기반으로 하는 합의는 정족수(Quorum)에 도달하면 블록을 생성합니다.",
+    "keywords": ["Network", "Consensus"],
+    "difficulty": "초급"
+  },
+    {
+    "id": 31,
+    "category": "Consensus",
+    "question": "BFT(Byzantine-Fault-Torerlance)에 대해서 설명해주세요.",
+    "answer": "비잔틴 결함 허용은 분산 시스템 환경에서 가장 최악의 시나리오에 해당되는 연구 주제입니다. 비잔틴 장군에서 유래되었으며 합의 진행시 전체 투표의 2/3가 찬성하면 합의가 진행됩니다.",
+    "keywords": ["Network", "Consensus"],
+    "difficulty": "초급"
+  },
+    {
+    "id": 31,
+    "category": "Solana",
+    "question": "TowerBFT에 대해서 설명해주세요.",
+    "answer": "PoH로 타임스탬프와 순서를 정한 블록과 32개의 스택 투표를 모아서 결정하도록 하는 합의 매커니즘이다. Gossip으로 전파된다.",
+    "keywords": ["Solana", "Consensus"],
+    "difficulty": "초급"
   }
 ]
