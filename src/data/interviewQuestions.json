@@ -256,10 +256,26 @@
     "difficulty": "초급"
   },
     {
-    "id": 31,
+    "id": 32,
+    "category": "Consensus",
+    "question": "Safety 와 Liveness에 대해서 설명해주세요.",
+    "answer": "합의 연구에 기본인 네트워크의 안전성과 활성을 의미합니다. 수학적으로 입증하는 것이 합의의 기본이 됩니다.",
+    "keywords": ["Consensus"],
+    "difficulty": "초급"
+  },
+    {
+    "id": 33,
     "category": "Solana",
-    "question": "TowerBFT에 대해서 설명해주세요.",
-    "answer": "PoH로 타임스탬프와 순서를 정한 블록과 32개의 스택 투표를 모아서 결정하도록 하는 합의 매커니즘이다. Gossip으로 전파된다.",
+    "question": "SIMD에 대해서 설명해주세요.",
+    "answer": "Solana Improvement Document로서 솔라나와 관련된 연구와 안건이 올라옵니다.",
+    "keywords": ["Solana", "SIMD"],
+    "difficulty": "초급"
+  },
+    {
+    "id": 34,
+    "category": "Solana",
+    "question": "Alpenglow와 Kudzu에 대해서 설명해주세요.",
+    "answer": "Kudzu는 알펜글로우 업데이트에서 사용될 합의 모델을 학술적으로 연구한 논문이며 Alpenglow는 솔라나의 대규모 합의 개편을 일컫습니다.",
     "keywords": ["Solana", "Consensus"],
     "difficulty": "초급"
   }
